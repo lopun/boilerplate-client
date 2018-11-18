@@ -7,7 +7,7 @@ const Container = styled.div``;
 const HomePresenter = () => (
   <Container>
     <Helmet>
-      <title>Home | Portfolio Maker</title>
+      <title>Home | Boilerplate</title>
     </Helmet>
     Home :)
   </Container>

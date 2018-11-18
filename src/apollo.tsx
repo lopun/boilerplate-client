@@ -43,8 +43,8 @@ const wsLink = new WebSocketLink({
     reconnect: true
   },
   uri: isDev
-    ? "ws://localhost:4000/subscriptions"
-    : "ws://backendurl.com/subscriptions"
+    ? "ws://localhost:4000/subscription"
+    : "ws://backendurl.com/subscription"
 });
 
 // OperationDefinition이면 wsLink, subscription이면 httpLink

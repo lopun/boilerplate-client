@@ -1,4 +1,5 @@
 import ApolloClient, { Operation } from "apollo-boost";
+const isDev = process.env.NODE_ENV === "development" ? true : false;
 
 const client = new ApolloClient({
   clientState: {
@@ -44,7 +45,9 @@ const client = new ApolloClient({
       }
     });
   },
-  uri: "http://localhost:4000/graphql"
+  uri: isDev
+    ? "http://localhost:4000/graphql"
+    : "https://backendurl.com/graphql"
 });
 
 export default client;

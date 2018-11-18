@@ -12,6 +12,7 @@
 # Generated Files by Apollo Gen
 src/types/api.d.ts
 schema.json
+tags
 
 # Env Files
 src/.env
